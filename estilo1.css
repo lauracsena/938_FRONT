@@ -1,0 +1,17 @@
+body{
+    color: lightskyblue;
+}
+
+.highlight{
+    color: blue;
+}
+
+.darkBg{
+    background-color: rgb(6, 255, 226);
+    padding: 20px;
+}
+/*selector anidado*/
+.darkBg .highlight{
+    color: white;
+    font-family: cursive;
+}

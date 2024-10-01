@@ -1,0 +1,23 @@
+body{
+    color: coral;
+}
+
+.subrayado{
+    text-decoration: underline;
+    color: aquamarine;
+}
+.mayusculas{
+    text-transform: uppercase;
+}
+#nombre2{
+    background-color: black;
+    color: yellow;
+}
+.cabezal{
+    font-family:impact; 
+}
+/*Herencia*/
+p.subrayado{
+    color: red;
+    margin-left: 100px;
+}
