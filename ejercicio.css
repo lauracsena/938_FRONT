@@ -49,6 +49,16 @@ header {
 .nav-links a:hover {
     color: #007bff; /* Color al pasar el mouse */
 }
+.container{
+    background-color: lightblue ;
+}
+
+[href="https://listado.mercadolibre.com.co/discos-acetatos#D[A:discos%20acetatos]"]{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 32px;
+        color: darkmagenta;
+}
 
 h1{
     text-align: center;
