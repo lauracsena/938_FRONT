@@ -1,3 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url();
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye logo y enlaces */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.nav-logo img {
+    height: 40px; /* Aumenta el tamaño del logo */
+    width: auto;  /* Deja que la imagen mantenga su proporción */
+}
+
+.nav-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Los enlaces estarán en línea */
+    gap: 20px; /* Espaciado entre enlaces */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Color al pasar el mouse */
+}
+
 h1{
     text-align: center;
 }
