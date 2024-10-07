@@ -1,0 +1,11 @@
+/*[Href= "https://toyota.com"]*/
+[href]
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: darkmagenta;
+}
+li :hover{
+    color: red;
+}

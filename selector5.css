@@ -1,0 +1,29 @@
+a{
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid brown;
+}
+
+a.link{
+    color: black;
+}
+
+a:hover{
+    color: bisque;
+    background: gray;
+}
+
+a:active{
+    color: chartreuse;
+    background: black;
+}
+
+a:visited{
+    color: cadetblue;
+}
+
+[type="radio"]:checked + label{
+    font-weight: bold;
+    color: coral;
+    background: rgba(40, 40, 144, 0.961);
+}
