@@ -15,16 +15,55 @@
     <a href="#">Link ya visitados</a>
     
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti dolores id corporis dolore, vel obcaecati perspiciatis, beatae consectetur ab tempora consequatur in. Est delectus omnis velit eveniet ipsa recusandae quos expedita tempore nostrum. Labore sunt porro magnam cumque molestias nostrum illo, eaque magni cum. Temporibus excepturi sed, nobis quae sit quos odio eaque neque voluptate nesciunt porro minus rerum dolor quis dolorem in possimus iusto earum, aspernatur, necessitatibus unde quibusdam recusandae? Quasi corrupti alias ipsa consequuntur suscipit sunt, deserunt voluptatibus!</p>
+
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium maiores ullam dicta quos temporibus magnam voluptatibus sequi corporis aliquam iusto! Enim, ut laboriosam soluta aliquid natus, dolor illo quod blanditiis, perspiciatis voluptatibus ex eveniet totam repellendus reiciendis veniam libero dicta sunt voluptate quae iure eligendi velit facilis consequuntur inventore? Minus animi quos eius eligendi fuga, dolorum voluptatem, nihil corporis quasi impedit quod architecto assumenda voluptatum possimus quae. Aperiam animi illo veritatis deleniti dolorem quasi sunt voluptatum, repellat ad ex voluptas cum velit voluptatibus reiciendis saepe cumque. Nulla quod magnam fugit, voluptatum excepturi quae quis ea praesentium deleniti officiis ad. Quos tempore illo corporis! Officiis ducimus aspernatur numquam distinctio assumenda esse illum est atque hic iusto quos a corporis maxime dolore nulla quaerat quam voluptates nobis ratione, optio porro. Dolore aut repellendus deserunt quas, cum voluptatibus error sit laudantium, nihil, illo nesciunt distinctio explicabo blanditiis beatae neque voluptas! Animi, odit reiciendis.</p>
     <form>
-        <p>Seleccione una opcion</p>
-        <input type="radio" id="opcion1" name="opcion" value="1">
-        <label for="opcion1">Opcion 1</label>
+        <fieldset >
+            <div>
+                <label for="nombre">Indique su nombre completo</label>
+                <input type="text" name="nombres" id="nombres" required>
+                <span class="requiredfield">Campo obligatorio</span>
+            </div>
 
-        <input type="radio" id="opcion2" name="opcion" value="2">
-        <label for="opcion2">Opcion 2</label>
+            <div>
+                <label name="nombre">Correo electronico</label>
+                <input type="email" name="orreo" id="correo" required>
+                <span class="requiredfield">Campo obligatorio</span> 
+            </div>
 
-        <input type="radio" id="opcion3" name="opcion" value="3">
-        <label for="opcion3">Opcion 3</label>
+            <div>
+                <label for="telefono"> Telefono contacto (opcional)</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+            <label for="numero">Elija un numero de 1-10</label>
+            <input type="number" name="numero" id="numero" min="1" max="10" required>
+            <span class="requiredfield">Campo obligatorio</span> 
+        </div>
+
+        <div>
+            <p>Seleccione una opcion</p>
+            <input type="radio" id="opcion1" name="opcion" value="1">
+            <label for="opcion1">Opcion 1</label>
+    
+            <input type="radio" id="opcion2" name="opcion" value="2">
+            <label for="opcion2">Opcion 2</label>
+    
+            <input type="radio" id="opcion3" name="opcion" value="3">
+            <label for="opcion3">Opcion 3</label>
+        </div>
+    </fieldset>
+
+    <div>
+        <input type="checkbox" name="acepto" id="acepto" required>
+        <label for="acepto">Acepto las condiciones</label>
+        <input type="submit" value="enviar">
+    </div>
+
     </form>
 </body>
 </html>

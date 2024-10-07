@@ -1,0 +1,12 @@
+p{
+    color: gray;
+}
+
+p:only-child{
+    font-weight: bold;
+    background: blue;
+}
+
+p:only-of-type{
+    font-size: 2em;
+}
