@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discos</title>
+    <link rel="stylesheet" href="ejercicio.css">
+</head>
+<body>
+    <h1>Tienda de Discos</h1>
+    <a name="inicio">
+    <a href="#final">Ir al final</a>
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, vero vitae. Minima deserunt asperiores et saepe unde, recusandae mollitia doloribus reprehenderit commodi necessitatibus corrupti dolores facere. Quibusdam magnam incidunt ad, et nemo optio repellat illum natus est facilis, dolorem accusamus quos eum, unde pariatur at itaque saepe recusandae consequuntur repudiandae officiis veniam ea consequatur. Accusamus rerum aspernatur modi adipisci aperiam dolorum est voluptas perspiciatis rem culpa beatae, ipsum officia aliquam iure deserunt velit praesentium id architecto cumque. Facere, eius perferendis!</p>
+
+    <div class="lista">
+        <div class="disco"><img src="disco1.jpg" alt="">Disco 1
+        <p>Descripcion del disco Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos accusantium deserunt repellat, quia voluptates ducimus facilis ut id voluptatem aliquam.</p>
+        </div>
+    </div>
+
+
+    <form>
+        <fieldset >
+            <div>
+                <label for="nombre">Indique su nombre completo</label>
+                <input type="text" name="nombres" id="nombres" required>
+                <span class="requiredfield">Campo obligatorio</span>
+            </div>
+
+            <div>
+                <label name="nombre">Correo electronico</label>
+                <input type="email" name="orreo" id="correo" required>
+                <span class="requiredfield">Campo obligatorio</span> 
+            </div>
+
+            <div>
+                <label for="telefono"> Telefono contacto (opcional)</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+            <label for="numero">Elija un numero de 1-10</label>
+            <input type="number" name="numero" id="numero" min="1" max="10" required>
+            <span class="requiredfield">Campo obligatorio</span> 
+        </div>
+
+        <div>
+            <p>Seleccione una opcion</p>
+            <input type="radio" id="opcion1" name="opcion" value="1">
+            <label for="opcion1">Opcion 1</label>
+    
+            <input type="radio" id="opcion2" name="opcion" value="2">
+            <label for="opcion2">Opcion 2</label>
+    
+            <input type="radio" id="opcion3" name="opcion" value="3">
+            <label for="opcion3">Opcion 3</label>
+        </div>
+    </fieldset>
+
+    <div>
+        <input type="checkbox" name="acepto" id="acepto" required>
+        <label for="acepto">Acepto las condiciones</label>
+        <input type="submit" value="enviar">
+    </div>
+
+    </form>
+
+
+    <a href="#inicio">Ir al inicio</a>
+
+    https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+</body>
+</html>

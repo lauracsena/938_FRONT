@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+
+a{ 
+    font-family:'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: gold;
+}
+
+.lista{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #4c59ae;
+}
+.lista .disco{
+    width: 300px;
+    color: #fff;
+    background-color: #667238;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.disco img{
+    width: 70px;
+    height: auto;
+    margin-bottom: 20px;  
+}
+
+p:first-child{
+    color: red;
+}

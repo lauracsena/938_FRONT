@@ -2,11 +2,29 @@ p{
     color: gray;
 }
 
+/* p que es el unico definido dentro del padre*/
 p:only-child{
     font-weight: bold;
-    background: blue;
 }
-
+/* el unico p en el padre*/
 p:only-of-type{
     font-size: 2em;
+}
+/*primer p de cada padre*/
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    background: aquamarine;
+}
+
+p:nth-child(3){
+    text-decoration: underline;
+    color: gold;
+}
+
+p:nth-child(4){
+    font-style: italic;
+    text-transform: uppercase;
 }
