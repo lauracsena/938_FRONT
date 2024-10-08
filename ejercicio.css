@@ -7,50 +7,42 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url();
+    background-color: lightblue;
 }
 
 header {
     background-color: #fff;
     padding: 10px 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Distribuye logo y enlaces */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-logo img {
-    height: 40px; /* Aumenta el tamaño del logo */
-    width: auto;  /* Deja que la imagen mantenga su proporción */
+    height: 60px;
+    width: auto;  
 }
 
 .nav-links {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; /* Los enlaces estarán en línea */
-    gap: 20px; /* Espaciado entre enlaces */
+    display: flex;
+    gap: 25px; 
 }
 
-.nav-links li {
-    display: inline-block;
-}
 
 .nav-links a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: bolder;
     padding: 5px 10px;
-    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #007bff; /* Color al pasar el mouse */
-}
-.container{
-    background-color: lightblue ;
+    color: #7700ff;
 }
 
 [href="https://listado.mercadolibre.com.co/discos-acetatos#D[A:discos%20acetatos]"]{
@@ -60,11 +52,12 @@ header {
         color: darkmagenta;
 }
 
-h1{
+.intro{
     text-align: center;
+    margin: 20px;
 }
 
-a{ 
+.intro a{ 
     font-family:'Courier New', Courier, monospace;
     text-transform: capitalize;
     font-weight: bolder;
@@ -77,27 +70,101 @@ a:hover{
 }
 
 .lista{
-    margin: 50px;
     display: flex;
-    justify-content: space-around;
-    padding: 50px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 30%;
     background-color: #4c59ae;
 }
 .lista .disco{
-    width: 300px;
-    color: #fff;
-    background-color: #667238;
+    width: 250px;
+    color: #181616;
+    background-color: #caceb8;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
 }
 
 .disco img{
-    width: 70px;
+    width: 100px;
     height: auto;
-    margin-bottom: 20px;  
+    margin-bottom: 10px;  
 }
 
-p:first-child{
+.TC{
+    text-align: center;
+    margin: 40px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+form{
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    margin-bottom: 20px;
+}
+
+[type="radio"]:checked + label{
+    font-weight: bold;
+    color: coral;
+    background: rgba(40, 40, 144, 0.961);
+}
+
+div, fieldset{
+    margin: 2em;
+}
+input:required + .requiredfield{
+  display: block;
+  color: gray; 
+}
+
+input:required:valid + .requiredfield{
+    display: none;
+}
+
+input:out-of-range:invalid{
     color: red;
+    border: 2px dotted currentColor;
+    background: lightpink;
+}
+
+input:in-range:valid{
+    color:green;
+    border: 2px solid currentColor;
+    background: lightgreen;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input:focus{
+    border: 5px solid orange;
+    outline: orange auto 10px;
+}
+
+:required ~ [type="submit"] , :required:valid ~ [type="submit"] :disabled{
+    display: none;
+}
+
+:required:valid ~ [type="submit"], :required ~ [type="submit"]:disabled{
+    display: inline-block;
 }

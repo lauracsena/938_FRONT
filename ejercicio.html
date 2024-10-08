@@ -10,24 +10,26 @@
 
 <body>
 
+
     <header>
         <nav class="navbar">
             <div class="nav-logo">
                 <img src="logo.webp" alt="Logo" class="logo">
             </div>
-            <!-- Aquí puedes agregar más elementos, como enlaces de navegación -->
             <ul class="nav-links">
-                <li><a href="https://listado.mercadolibre.com.co/discos-acetatos#D[A:discos%20acetatos]" target="_blank">Mercado Libre</a></li>
+                <li><a href="https://listado.mercadolibre.com.co/discos-acetatos#D[A:discos%20acetatos]"
+                        target="_blank">Mercado Libre</a></li>
                 <li><a href="">Tienda</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <br>
+
+
+    <br>
+    <div class="intro">
         <h1>Tienda de Discos</h1>
         <a name="inicio">
             <a href="#final">Ir al final</a>
-            <br>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, vero vitae. Minima deserunt asperiores
                 et saepe unde, recusandae mollitia doloribus reprehenderit commodi necessitatibus corrupti dolores
                 facere. Quibusdam magnam incidunt ad, et nemo optio repellat illum natus est facilis, dolorem accusamus
@@ -35,67 +37,90 @@
                 consequatur. Accusamus rerum aspernatur modi adipisci aperiam dolorum est voluptas perspiciatis rem
                 culpa beatae, ipsum officia aliquam iure deserunt velit praesentium id architecto cumque. Facere, eius
                 perferendis!</p>
+    </div>
 
-            <div class="lista">
-                <div class="disco"><img src="disco1.jpg" alt="">Disco 1
-                    <p>Descripcion del disco Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
-                        accusantium deserunt repellat, quia voluptates ducimus facilis ut id voluptatem aliquam.</p>
-                </div>
+    <br>
+
+    <div class="lista">
+        <div class="disco">
+            <img src="disco1.jpg" alt="disco1">
+            <h2>Disco 1</h2>
+            <p>Descripcion del disco Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+                accusantium deserunt repellat, quia voluptates ducimus facilis ut id voluptatem aliquam.
+            </p>
+        </div>
+    </div>
+
+
+    <form>
+        <fieldset>
+            <div>
+                <label for="nombre">Indique su nombre completo</label>
+                <input type="text" name="nombres" id="nombres" required>
+                <span class="requiredfield">Campo obligatorio</span>
             </div>
 
+            <div>
+                <label name="nombre">Correo electronico</label>
+                <input type="email" name="orreo" id="correo" required>
+                <span class="requiredfield">Campo obligatorio</span>
+            </div>
 
-            <form>
-                <fieldset>
-                    <div>
-                        <label for="nombre">Indique su nombre completo</label>
-                        <input type="text" name="nombres" id="nombres" required>
-                        <span class="requiredfield">Campo obligatorio</span>
-                    </div>
+            <div>
+                <label for="telefono"> Telefono contacto (opcional)</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+        </fieldset>
 
-                    <div>
-                        <label name="nombre">Correo electronico</label>
-                        <input type="email" name="orreo" id="correo" required>
-                        <span class="requiredfield">Campo obligatorio</span>
-                    </div>
+        <fieldset>
+            <div>
+                <label for="numero">Elija un numero de 1-10</label>
+                <input type="number" name="numero" id="numero" min="1" max="10" required>
+                <span class="requiredfield">Campo obligatorio</span>
+            </div>
 
-                    <div>
-                        <label for="telefono"> Telefono contacto (opcional)</label>
-                        <input type="tel" name="telefono" id="telefono">
-                    </div>
-                </fieldset>
+            <div>
+                <p>Seleccione una opcion</p>
+                <input type="radio" id="opcion1" name="opcion" value="1">
+                <label for="opcion1">Opcion 1</label>
 
-                <fieldset>
-                    <div>
-                        <label for="numero">Elija un numero de 1-10</label>
-                        <input type="number" name="numero" id="numero" min="1" max="10" required>
-                        <span class="requiredfield">Campo obligatorio</span>
-                    </div>
+                <input type="radio" id="opcion2" name="opcion" value="2">
+                <label for="opcion2">Opcion 2</label>
 
-                    <div>
-                        <p>Seleccione una opcion</p>
-                        <input type="radio" id="opcion1" name="opcion" value="1">
-                        <label for="opcion1">Opcion 1</label>
+                <input type="radio" id="opcion3" name="opcion" value="3">
+                <label for="opcion3">Opcion 3</label>
+            </div>
+        </fieldset>
+    </form>
 
-                        <input type="radio" id="opcion2" name="opcion" value="2">
-                        <label for="opcion2">Opcion 2</label>
+    <div class="TC">
+        <h2>Terminos y condiciones</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore esse dolor doloribus molestiae quasi
+            soluta aliquam quae! Doloribus debitis, esse assumenda amet ad atque provident corrupti explicabo quos
+            quisquam iure quia quasi magnam similique tempora aliquam nam optio labore rerum id eveniet velit cumque
+            odio? Voluptate, unde cum! Ratione assumenda optio quis earum, iusto neque deleniti ducimus quo, aperiam
+            facilis veritatis non rerum inventore voluptatum atque exercitationem ipsum eius quasi ea dignissimos.
+            Soluta illo dolorum culpa ab, quam expedita sint minima blanditiis mollitia aspernatur hic aliquam itaque
+            doloribus neque quidem aliquid autem illum dignissimos perferendis, et voluptatum ipsam. Harum nostrum
+            corrupti quasi temporibus consequatur voluptate saepe omnis voluptas, officia ab nulla laboriosam amet
+            eveniet laborum a assumenda magni enim illo? Ab ad nostrum dolorum soluta animi, deleniti voluptates unde
+            laudantium rem alias architecto molestias pariatur quia qui ea esse amet ratione, magni dolorem ut dolor
+            corporis sapiente. Aspernatur, dolorum. Fugiat debitis minus aspernatur tempora accusamus ratione
+            voluptatibus a, nulla consectetur similique? Impedit vero neque velit minima blanditiis asperiores autem
+            vitae nisi beatae quasi! Sit hic neque beatae expedita error, itaque quod asperiores perspiciatis tenetur
+            nihil dolor similique? Corporis dolores repellendus quibusdam eveniet doloremque doloribus delectus id
+            accusamus voluptas ea.
+        </p>
 
-                        <input type="radio" id="opcion3" name="opcion" value="3">
-                        <label for="opcion3">Opcion 3</label>
-                    </div>
-                </fieldset>
-
-                <div>
-                    <input type="checkbox" name="acepto" id="acepto" required>
-                    <label for="acepto">Acepto las condiciones</label>
-                    <input type="submit" value="enviar">
-                </div>
-
-            </form>
-
-
-            <a href="#inicio">Ir al inicio</a>
+        <div class="check">
+            <input type="checkbox" name="acepto" id="acepto" required>
+            <label for="acepto">Acepto las condiciones</label>
+            <input type="submit" value="enviar">
+        </div>
 
     </div>
+    
+    <a href="#inicio">Ir al inicio</a>
 
 </body>
 

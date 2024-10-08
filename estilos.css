@@ -1,0 +1,70 @@
+header {
+    background-color: #d9d9d9; /* Fondo más suave */
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo img {
+    height: 60px; /* Aumenta el tamaño del logo */
+    width: auto;
+}
+.nav-links {
+    display: flex;
+    gap: 25px; /* Más espaciado entre enlaces */
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #7700ff;
+}
+
+form {
+    margin: 30px;
+    padding: 25px;
+    background-color: #eaeff7; /* Fondo más suave */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+form input[type="submit"] {
+    background-color: #7700ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+form input[type="submit"]:hover {
+    background-color: #5e00cc;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #4c59ae;
+}
+.lista .disco {
+    width: 300px;
+    color: #fff;
+    background-color: #667238;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Añadido redondeo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.disco img {
+    width: 100px; /* Aumentado el tamaño de la imagen */
+    height: auto;
+    margin-bottom: 20px;
+}
