@@ -168,3 +168,34 @@ input:focus{
 :required:valid ~ [type="submit"], :required ~ [type="submit"]:disabled{
     display: inline-block;
 }
+
+/********************************/
+p:only-child{
+    background: #4c59ae;
+}
+
+/* el unico p en el padre*/
+h1:only-of-type{
+    font-size: 3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkslategray;
+}
+/*primer p de cada padre*/
+h2:first-child{
+    color: red;
+}
+
+p:last-child{
+    font-weight: bolder;
+    color: #fff;
+}
+/*div vacio de clase disco*/
+.empty-disco:empty {
+    background-color: lightcoral;
+    padding: 20px;
+    border: 2px solid #ff0000;
+}
+/*todos los links menos mercado libre*/
+.nav-links a:not([href*="mercadolibre"]) {
+    color: rgb(64, 158, 158);
+}
