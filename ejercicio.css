@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 * {
     margin: 0;
@@ -225,7 +226,7 @@ p:only-child{
 /* el unico p en el padre*/
 h1:only-of-type{
     font-size: 3em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'shrikhand', cursive;
     color: rgb(7, 132, 214);
 }
 /*primer p de cada padre*/
