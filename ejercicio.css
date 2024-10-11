@@ -13,41 +13,47 @@ body {
 }
 
 header {
-
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    box-shadow: 0 0 15px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 25%;
+    position: relative;
 }
 
-.nav-logo img {
-    height: 50px;
-    width: auto;  
-}
-
-.nav-links {
+.nav-left, .nav-right {
     display: flex;
-    gap: 25px; 
-    padding: 15px;
+    align-items: center;
 }
 
-
-.nav-links a {
+.nav-link1, .nav-link2, .nav-link3 {
+    padding-right: 40px;
+    padding-left: 40px;
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 5px 10px;
+    color: #69358b;
+    font-size: 17px;
 }
 
-.nav-links a:hover {
-    color: #7700ff;
+.nav-link1:hover {
+    color: #4CAF50; /* Color verde como el de "INICIO" */
 }
+
+.logo-contenedor {
+    position: absolute;
+    left: 45%;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+
+
 
 [href="https://listado.mercadolibre.com.co/discos-acetatos#D[A:discos%20acetatos]"]{
         text-decoration: none;
@@ -62,21 +68,9 @@ header {
     padding: 40px;
     margin: 100px;
 }
-.intro{
-    text-align: center;
+.inicio{
+    text-align: left;
     margin: 20px;
-}
-
-.intro a{ 
-    font-family:'Courier New', Courier, monospace;
-    text-transform: capitalize;
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    color: gold;
 }
 
 .container{
