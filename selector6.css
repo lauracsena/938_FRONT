@@ -7,7 +7,7 @@ p:only-child{
     font-weight: bold;
 }
 /* el unico p en el padre*/
-p:only-of-type{
+h2:only-of-type{
     font-size: 2em;
 }
 /*primer p de cada padre*/

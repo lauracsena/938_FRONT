@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(fondo.jfif);
+    background-image: url(./Img/Colorful\ fireflies.jfif);
     background-size: 100% 100%;
     background-attachment: fixed;/*la imagen se quede fija*/
 }
@@ -17,13 +18,17 @@ header {
     background-color: #fff;
     padding: 10px 20px;
     box-shadow: 0 0 15px;
-}
+    position: fixed; /* Fijar el header */
+    top: 0; /* Mantenerlo en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    z-index: 10; /* Asegurar que esté encima del aside */
 
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .nav-left, .nav-right {
@@ -32,6 +37,7 @@ header {
 }
 
 .nav-link1, .nav-link2, .nav-link3 {
+    background-color: #fff;
     padding-right: 40px;
     padding-left: 40px;
     text-decoration: none;
@@ -40,7 +46,8 @@ header {
 }
 
 .nav-link1:hover {
-    color: #4CAF50; /* Color verde como el de "INICIO" */
+    background-color: #4CAF50; /* Color verde como el de "INICIO" */
+    color: #fff;
 }
 
 .logo-contenedor {
@@ -52,99 +59,58 @@ header {
     width: 100px;
     height: auto;
 }
-
-
-
-
-[href="https://listado.mercadolibre.com.co/discos-acetatos#D[A:discos%20acetatos]"]{
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 32px;
-        color: darkmagenta;
+/*Disco principal*/
+main{
+    padding-top: 100px;
 }
-
-.pagina{
-    border-radius: 20px;
-    background-color: #ffffff83;
-    padding: 100px 60px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-}
-.inicio{
-    text-align: left;
-    margin: 20px;
-}
-
-.container{
-    display: flex;
-}
-
-.lista{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    margin: 20px ;
-    width: 30%;
-    height: 30%;
-    background-color: rgb(72, 180, 180);
-    border-radius: 20px;
-}
-.lista .disco{
-    font-size: 10px;
-    width: 90%;
-    height:100%;
-    color: #181616;
-    background-color: #f6f7f3;
-    padding: 10px;
-    text-align: center;
-    border-radius: 60px;
-}
-
-.disco img{
-    width: 60%;
-    height: auto;
-    margin-bottom: 10px;  
-}
-
-.TC{
-    background-color: #eedec7;
-    border: #333;
-    border-radius: 30px;
-    text-align: left;
-    margin: 40px;
-    font-size: small;
-}
-
-.check{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-form{
-    width: 60%;
+.white-card{
     margin: 60px auto;
     padding: 20px;
-    background-color: #eedec7;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff83;
+    display: flex;
+    justify-content: space-around;
+    width: 80% ;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+.product-card{
+    background-color:#695079;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+}
+.product-int{
+    background-color: #ade6bb;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    height: 80%;
+    width: 40%;
+}
+.disco img{
+    width: 450px;
+}
+
+form {
+    width: 360px ;
+    text-align: center;
 }
 
 form fieldset {
-    margin-bottom: 20px;
-}
-
-[type="radio"]:checked + label{
+    background-color: #fff;
+    font-family: 'Urbanist' ;
+    font-size: medium;
     font-weight: bold;
-    color: rgb(250, 243, 241);
-    background: rgba(40, 40, 144, 0.961);
-}
+    width: 250px;
+    align-items: center;
 
+}
 
 div, fieldset{
     margin: 2em;
+    width: 300px;
+    align-content: center;
+
 }
 input:required + .requiredfield{
   display: block;
@@ -188,60 +154,33 @@ input:focus{
     display: inline-block;
 }
 
-.otros{
-    background: url(fondo.jfif);
-    display: flex;
-    justify-content: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;/*la imagen se quede fija*/
-}
-
-.otros .mas{
-    background-color:#ffffffa2 ;
-    flex-direction: column;
-    display: flex;
-    border-radius: 30px;
-    align-items: center;
-    text-align: center;
-}
-
-.mas h3{
-    text-align: center;
-    padding: 10px;
-}
-
-.mas img{
-    width: 100px;
-    height: auto;
-    margin: 0 auto;
-}
-.not-hover{
-    background-color: ;
-}
-.not-hover:hover a:not(:hover) {
-    opacity: .7;
-    transform: scale(.85);
-}
-
 
 /********************************/
-p:only-child{
-    background: #4c59ae;
+
+h2:only-of-type{
+    font-family: 'shrikhand', cursive;
+    text-transform: uppercase;
+    font-size:large;
+    color: #69358b;
+    text-align: justify;
 }
 
+
 /* el unico p en el padre*/
-h1:only-of-type{
-    font-size: 3em;
-    font-family: 'shrikhand', cursive;
-    color: rgb(7, 132, 214);
+p:only-of-type{
+    font-family: 'Urbanist', cursive;
+    color: black;
+    font-weight: bold;
 }
 /*primer p de cada padre*/
-h2:first-child{
-    color: #8f5bbd;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+h3:first-child{
     text-align: center;
-    padding: 10px;
+    background-color: #ade6bb;
+    font-family: 'shrikhand', cursive;
+    text-transform: uppercase;
+    font-size: x-large;
+    color: #69358b;
+    margin-top: 30px;
 }
 
 p:last-child{
@@ -249,16 +188,68 @@ p:last-child{
     color: rgb(250, 101, 250);
     font-size: 10px;
 }
-/*div vacio de clase disco*/
-.mas:empty {
-    width: 60%;
-    background-color: rgba(240, 128, 128, 0.459);
-    padding: 20px;
-    border: 2px solid #ff0000;
-    border-radius: 25px;
-}
-/*todos los links menos mercado libre*/
-.nav-links a:not([href*="mercadolibre"]) {
-    color: #eca6cd;
 
+.generos{
+    background-color: #fff;
+    text-align: center;
 }
+
+.contenedor{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(3, 1fr); /* 3 filas */
+    gap: 5px; /* Espacio entre los elementos */
+}
+.cuadrado img{
+    width: 80px;
+}
+
+.cuadrado img:hover{
+    width: 60px;
+    height: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+

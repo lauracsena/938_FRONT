@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discos</title>
-    <link rel="stylesheet" href="ejercicio.css">
-</head>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Discos</title>
+        <link rel="stylesheet" href="ejercicio.css">
+    </head>
 
 <body>
     <header>
@@ -28,124 +31,99 @@
         </nav>
     </header>
 
-    <div class="pagina">
-        <div class="inicio">
-            <h1>Do House</h1>
-            <p>Nuestra tienda ofrece una selección curada de discos, desde clásicos inolvidables hasta las ediciones más
-                exclusivas y recientes lanzamientos.</p>
-        </div>
-        <br>
-
-             
-        
-
-        <div class="container">
-            <div class="lista">
-                <div class="disco">
-                    <img src="album1.png" alt="disco1">
-                    <h2>Version 1</h2>
-                    <p>Descripcion del disco Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                    <a href="https://youtu.be/h_D3VFfhvs4?si=tXW_r6wN7LTOaJij">Play</a>
+    <main>
+        <div class="white-card">
+            <div class="product-card">
+                <div class="product-int">
+                    <div class="disco">
+                        <img src=".//Img/version1.png" alt="disco musical">
+                    </div>
                 </div>
             </div>
 
-
             <form>
-                <h2>Informacion de entrega</h2>
-                <fieldset>
-                    <div>
-                        <label for="Direccion">Indique La direccion de entrega</label>
-                        <input type="text" name="Direccion" id="Direccion" required>
-                        <span class="requiredfield">Campo obligatorio</span>
-                    </div>
-                    <div>
-                        <label for="nombre">Indique su nombre completo</label>
-                        <input type="text" name="nombres" id="nombres" required>
-                        <span class="requiredfield">Campo obligatorio</span>
-                    </div>
-
-                    <div>
-                        <label name="nombre">Correo electronico</label>
-                        <input type="email" name="orreo" id="correo" required>
-                        <span class="requiredfield">Campo obligatorio</span>
-                    </div>
-
-                    <div>
-                        <label for="telefono"> Telefono contacto (opcional)</label>
-                        <input type="tel" name="telefono" id="telefono">
-                    </div>
-                </fieldset>
+                <h3>The Family Jewels</h3>
 
                 <fieldset>
                     <div>
-                        <label for="numero">Seleccione cantidad de copias</label>
+                        <input type="text" name="Direccion" id="Direccion" required placeholder="Ingresa tu Direccion">
+                    </div>
+                    <div>
+                        <input type="text" name="nombres" id="nombres" required placeholder="Ingresa tu Nombre">
+                    </div>
+
+                    <div>
+                        <input type="email" name="Correo" id="correo" required placeholder="Ingresa tu correo">
+                    </div>
+
+                    <div>
+                        <label for="numero">Cantidad</label>
                         <input type="number" name="numero" id="numero" min="1" max="10" required>
-                        <span class="requiredfield">Campo obligatorio</span>
                     </div>
 
-                    <div>
-                        <p>Seleccione una version</p>
-                        <br>
-                        <input type="radio" id="opcion1" name="opcion" value="1">
-                        <label for="opcion1">version 1</label>
+                    <div class="formulario2">
+                        <h2>Terminos y condiciones</h2>
 
-                        <input type="radio" id="opcion2" name="opcion" value="2">
-                        <label for="opcion2">Version 2</label>
-
-                        <input type="radio" id="opcion3" name="opcion" value="3" disabled>
-                        <label for="opcion3">Version 3</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat maxime
+                            aspernaturid beatae,dignissimos praesentium debitis officia sint vero!
+                        </p>
+                        <div class="check">
+                            <input type="checkbox" name="acepto" id="acepto" required>
+                            <label for="acepto">Acepto las condiciones</label>
+                            <input type="submit" value="enviar">
+                        </div>
+                        <input type="submit" value="Comprar">
                     </div>
                 </fieldset>
-                <div class="TC">
-                    <h2>Terminos y condiciones</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore esse dolor doloribus
-                        molestiae
-                        quasi
-                        soluta aliquam quae! Doloribus debitis, esse assumenda amet ad atque provident corrupti
-                        explicabo
-                        quos
-                        quisquam iure quia quasi magnam similique tempora aliquam nam optio labore rerum id eveniet
-                        velit
-                        cumque
-                        odio? Voluptate, unde cum! Ratione assumenda optio quis earum, iusto neque deleniti ducimus
-                        quo,
-                        aperiam
-                        facilis veritatis non rerum inventore voluptatum atque exercitationem ipsum eius quasi ea
-                        dignissimos.
-                        Soluta illo dolorum culpa ab, quam expedita sint minima blanditiis mollitia aspernatur hic
-                        aliquam
-                        itaque
-                        doloribus neque quidem aliquid autem illum dignissimos perferendis, et voluptatum ipsam.
-                        Harum
-                        nostrum
-                        corrupti quasi temporibus consequatur voluptate saepe omnis voluptas, officia ab nulla
-                        laboriosam
-                        amet
-                    </p>
-
-                    <div class="check">
-                        <input type="checkbox" name="acepto" id="acepto" required>
-                        <label for="acepto">Acepto las condiciones</label>
-                        <input type="submit" value="enviar">
-                    </div>
             </form>
-
         </div>
+        </div>
+    </main>
 
-    </div>
-    <hr>
+    <section class="generos">
+        <h1>Tu genero favorito</h1>
+        <p>El sountrack de tu vida</p>
 
-    <div class="not-hover">
-        <a href="a">box 1</a>
-        <a href="">box 2</a>
-        <a href="">box 3</a>
-        <a href="">box 4</a>
-    </div>
-    <a href="#inicio">Ir al inicio</a>
+        <div class="contenedor">
+            <img src="./Img/hombre.png" alt="">
+            <div class="iconos">
+                <div class="cuadrado">
+                    <img src="./Img/country.png" alt="alimentacion infantil">
+                </div>
+                <div class="cuadrado">
+                    <img src="./Img/electronica.png" alt="ropa">
+                </div>
+                <div class="cuadrado">
+                    <img src="./Img/Movies.png" alt="educacion">
+                </div>
+                <div class="cuadrado">
+                    <img src="./Img/pop.png" alt="educacion">
+                </div>
+                <div class="cuadrado">
+                    <img src="./Img/R&B.png" alt="educacion">
+                </div>
+                <div class="cuadrado">
+                    <img src="./Img/rap.png" alt="educacion">
+                </div>
+                <div class="cuadrado">
+                    <img src="./Img/rock.png" alt="educacion">
+                </div>
+            </div>
+        </div>
+    </section>
     <a name="final">
-        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </footer>
+        
 </body>
 
 </html>
