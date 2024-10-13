@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <title>Discos</title>
         <link rel="stylesheet" href="ejercicio.css">
@@ -33,49 +31,60 @@
 
     <main>
         <div class="white-card">
-            <div class="product-card">
-                <div class="product-int">
-                    <div class="disco">
-                        <img src=".//Img/version1.png" alt="disco musical">
+            <div class="white-left">
+                <div class="product-card">
+                    <div class="product-int">
+                        <div class="disco">
+                            <img id="version1" src="./Img/version1.png" alt="disco musical">
+                            <img id="version2" src="./Img/version1.png" alt="disco musical">
+                        </div>
                     </div>
+                </div>
+
+                <div class="version-target">
+                    <a href="#version1">Version1</a>
+                    <a href="#version2">Version2</a>
                 </div>
             </div>
 
-            <form>
-                <h3>The Family Jewels</h3>
+            <div class="white-rigth">
+                <form>
+                    <h3>The Family Jewels</h3>
 
-                <fieldset>
-                    <div>
-                        <input type="text" name="Direccion" id="Direccion" required placeholder="Ingresa tu Direccion">
-                    </div>
-                    <div>
-                        <input type="text" name="nombres" id="nombres" required placeholder="Ingresa tu Nombre">
-                    </div>
-
-                    <div>
-                        <input type="email" name="Correo" id="correo" required placeholder="Ingresa tu correo">
-                    </div>
-
-                    <div>
-                        <label for="numero">Cantidad</label>
-                        <input type="number" name="numero" id="numero" min="1" max="10" required>
-                    </div>
-
-                    <div class="formulario2">
-                        <h2>Terminos y condiciones</h2>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat maxime
-                            aspernaturid beatae,dignissimos praesentium debitis officia sint vero!
-                        </p>
-                        <div class="check">
-                            <input type="checkbox" name="acepto" id="acepto" required>
-                            <label for="acepto">Acepto las condiciones</label>
-                            <input type="submit" value="enviar">
+                    <fieldset>
+                        <div>
+                            <input type="text" name="Direccion" id="Direccion" required
+                                placeholder="Ingresa tu Direccion">
                         </div>
-                        <input type="submit" value="Comprar">
-                    </div>
-                </fieldset>
-            </form>
+                        <div>
+                            <input type="text" name="nombres" id="nombres" required placeholder="Ingresa tu Nombre">
+                        </div>
+
+                        <div>
+                            <input type="email" name="Correo" id="correo" required placeholder="Ingresa tu correo">
+                        </div>
+
+                        <div>
+                            <label for="numero">Cantidad</label>
+                            <input type="number" name="numero" id="numero" min="1" max="10" required>
+                        </div>
+
+                        <div class="formulario2">
+                            <h2>Terminos y condiciones</h2>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat maxime
+                                aspernaturid beatae,dignissimos praesentium debitis officia sint vero!
+                            </p>
+                            <div class="check">
+                                <input type="checkbox" name="acepto" id="acepto" required>
+                                <label for="acepto">Acepto las condiciones</label>
+                                <input type="submit" value="enviar">
+                            </div>
+                            <input type="submit" value="Comprar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         </div>
     </main>
@@ -111,19 +120,30 @@
             </div>
         </div>
     </section>
-    <a name="final">
 
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
-                <ul class="footer-links">
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </footer>
-        
+    <section class="cat">
+        <div class="album"><img src="./Img/red (taylor’s version) album cover 6_18_21.jfif" alt=""></div>
+        <div class="album"><img src="./Img/red (taylor’s version) album cover 6_18_21.jfif" alt=""></div>
+        <div class="album"><img src="./Img/red (taylor’s version) album cover 6_18_21.jfif" alt=""></div>
+        <div class="album"><img src="./Img/red (taylor’s version) album cover 6_18_21.jfif" alt=""></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Do house. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <ul>
+        <li>not</li>
+        <li>target</li>
+        <li>after</li>
+        <li></li>
+    </ul>
 </body>
-
 </html>

@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
 
 body {
     font-family: Arial, sans-serif;
@@ -64,15 +65,84 @@ main{
     padding-top: 100px;
 }
 .white-card{
-    margin: 60px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 10px;
     background-color: #ffffff83;
     display: flex;
-    justify-content: space-around;
     width: 80% ;
     border-radius: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    gap: 100px;
 }
+.white-left{
+    background-color: rgb(159, 159, 196);
+    width: 600px;
+}
+
+.version-target{
+    display: flex;
+}
+.white-left a{
+    margin: 5px;
+    background-color: #ade6bb;
+    color: black;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+/*before afrte*/
+h1::before {
+    content: "";
+    display: block;
+    height: 2px; /* Thickness of the line */
+    background-color: #333; /* Color of the line */
+    width: 50px; /* Width of the line */
+    margin: 0 auto 10px auto; /* Center the line with some space below */
+}
+
+.nav-link1::after,
+.nav-link2::after,
+.nav-link3::after {
+    content: "\f054"; /* Font Awesome right arrow icon */
+    font-family: "Font Awesome 5 Free"; /* Ensure this matches the Font Awesome version */
+    font-weight: 900; /* Set to solid weight */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+.white-rigth h3 {
+    position: relative; 
+}
+
+.white-rigth h3::before {
+    content: "";
+    display: block;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 100%; 
+    background-color: #ade6bb; 
+    height: 30px; 
+    z-index: -1; 
+}
+/*target*/
+
+.disco img{
+    width: 400px; 
+    height: auto; 
+    display: none;
+}
+
+/* Mostrar solo la imagen correspondiente al target */
+#version1:target, #version2:target {
+    display: block;
+}
+
+/* Mostrar la primera imagen (versión 1) por defecto */
+#version1 {
+    display: block;
+}
+
 .product-card{
     background-color:#695079;
     border: 3px solid #ffffff;
@@ -87,10 +157,6 @@ main{
     height: 80%;
     width: 40%;
 }
-.disco img{
-    width: 450px;
-}
-
 form {
     width: 360px ;
     text-align: center;
@@ -175,7 +241,6 @@ p:only-of-type{
 /*primer p de cada padre*/
 h3:first-child{
     text-align: center;
-    background-color: #ade6bb;
     font-family: 'shrikhand', cursive;
     text-transform: uppercase;
     font-size: x-large;
@@ -215,6 +280,28 @@ p:last-child{
     width: 60px;
     height: auto;
 }
+
+/*Catalogo con pseudo clase not*/
+.cat{
+    background-color:#ade6bb;
+    display: flex;
+    justify-content: space-between;
+}
+.cat:hover > :not(:hover){
+    filter: blur(5px);
+}
+
+.album img{
+    width: 300px;
+    height: auto;
+    transition: 0.6s;
+}
+
+.album img:hover{
+    scale: 1.2;
+    margin: 10px;
+}
+/*footer*/
 
 .footer {
     background-color: #333;
