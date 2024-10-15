@@ -82,6 +82,12 @@ main{
 .version-target{
     display: flex;
 }
+
+.version-target a:active{
+    background-color: #695079;
+    color: #ade6bb;
+    border: #ffffff 5px;
+}
 .white-left a{
     margin: 5px;
     background-color: #ade6bb;
@@ -103,10 +109,10 @@ h1::before {
 .nav-link1::after,
 .nav-link2::after,
 .nav-link3::after {
-    content: "\f054"; /* Font Awesome right arrow icon */
-    font-family: "Font Awesome 5 Free"; /* Ensure this matches the Font Awesome version */
-    font-weight: 900; /* Set to solid weight */
-    margin-left: 5px; /* Space between text and icon */
+    content: "\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-left: 5px;
 }
 
 .white-rigth h3 {
@@ -132,6 +138,7 @@ h1::before {
     height: auto; 
     display: none;
 }
+
 
 /* Mostrar solo la imagen correspondiente al target */
 #version1:target, #version2:target {
@@ -238,7 +245,7 @@ p:only-of-type{
     color: black;
     font-weight: bold;
 }
-/*primer p de cada padre*/
+/*primer h3 de cada padre*/
 h3:first-child{
     text-align: center;
     font-family: 'shrikhand', cursive;
@@ -249,11 +256,14 @@ h3:first-child{
 }
 
 p:last-child{
+    font-family: 'Urbanist';
+    text-transform: uppercase;
     font-weight: bolder;
-    color: rgb(250, 101, 250);
+    color: rgb(236, 86, 86);
     font-size: 10px;
 }
 
+/******/
 .generos{
     background-color: #fff;
     text-align: center;
@@ -282,17 +292,35 @@ p:last-child{
 }
 
 /*Catalogo con pseudo clase not*/
+
+.cat{
+    width: 99%;
+    max-width: 1280px;
+    margin:auto; /*quede centrado*/
+    }
+
 .cat{
     background-color:#ade6bb;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    padding: 5px;
+
 }
-.cat:hover > :not(:hover){
+.cat .cat-pro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, 1fr); /* 3 filas */
+    gap: 5px; /* Espacio entre los elementos */
+    /*align-items: center;
+    display: flex;
+    justify-content: space-between;*/
+    padding: 40px;
+}
+.cat .cat-pro:hover > :not(:hover){
     filter: blur(5px);
 }
 
 .album img{
-    width: 300px;
+    width: 200px;
     height: auto;
     transition: 0.6s;
 }
@@ -300,6 +328,12 @@ p:last-child{
 .album img:hover{
     scale: 1.2;
     margin: 10px;
+}
+/*sales*/
+.sales-box{
+    background-color: aqua;
+    padding: 25px;
+    margin-top: 50px;
 }
 /*footer*/
 
