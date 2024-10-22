@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionamienro 1</title>
+    <style type="text/css">
+        div{
+            /*posicionamiento absolito lo define el contenedor padre(pantalla en este caso)*/
+            position: relative;
+            font-size: 25px;
+            border: 5px solid salmon;
+            margin: 15px 20px;
+            padding:30px ;
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        #capa2{
+            /*height: 50px;
+            width: 400px;*/
+            position: absolute;
+            background-color: cadetblue;
+            color: white;
+            left: 80px;
+            top: 80px;
+        }
+
+        #capa1{
+            background-color: yellow;
+            z-index: 2;
+        }
+
+        a{
+            border: 2px;
+            border-style: dotted;
+        }
+    </style>
+</head>
+<body>
+    <div id="capa1">
+        caja 1
+    </div>
+
+    <div id="capa2">
+        caja 2
+        <!-- 
+        <a href="">Enlace 1</a>
+        <a href="">Enlace 2</a> -->
+    </div>
+
+    <div id="capa3">
+        caja 3
+    </div>
+</body>
+</html>
