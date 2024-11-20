@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID 1</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 300px 2fr 1fr;
+            grid-template-rows: auto 200px auto;
+            background-color: black;
+            padding: 10px;
+            /*manera larga grid gap
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+            */
+            
+            grid-gap: 30px 50px;
+        }
+
+        .grid-container div{
+            background-color: burlywood;
+            border: 5px solid rebeccapurple;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div>Introduccion:
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem est beatae rem quos praesentium alias temporibus sit sint eius!</p>
+        </div>
+        <div>2
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem est beatae rem quos praesentium alias temporibus sit sint eius!</p>
+        </div>
+        <div>3
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem est beatae rem quos praesentium alias temporibus sit sint eius!</p>
+        </div>
+        <div>4
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem est beatae rem quos praesentium alias temporibus sit sint eius!</p>
+        </div>
+        <div>5
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem est beatae rem quos praesentium alias temporibus sit sint eius!</p>
+        </div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>

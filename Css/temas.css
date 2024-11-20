@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+body{
+    font-family: helvetica, verdana;
+}
+
+div{
+    padding: 10px;
+}
+
+
+a{
+    color: rgb(50, 184, 79);
+    font-weight: bolder;
+    text-decoration: none;
+}
+a:hover{
+    border: 2px solid;
+    color: gold;
+}
+
+div#contenedor1{
+    margin: 30px 30px 0px 30px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+div.titulo{
+    font-family: 'Bokor';
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px rgba(224, 172, 0, 0.692) ;
+    border-bottom: 5px solid black;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+img#foto1{
+    float: left;
+    border: 3px solid gold;
+    margin: 14px 10px 0px 0px;
+    height: 200px;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+.titulop{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+div#pie{
+    margin-right: 30px;
+    text-align: right;
+    font-size: 12px;
+    font-family: italic;
+    color: #646464;
+}

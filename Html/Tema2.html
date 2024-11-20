@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+        body {
+            font-family: helvetica, verdana;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: rgb(135, 214, 98);
+            padding: 10px;
+            grid-gap: 10px;
+            height: 100%;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .grid-container div {
+            background-color: rgb(207, 110, 159);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 15px;
+        }
+
+        .combinada1 {
+            grid-area: 1/1 / 4/1;
+        }
+
+        .combinada2 {
+            grid-area: 2/2 / 2/4;
+        }
+
+        .combinada1 img{
+            width: 300px;
+        }
+
+        .combinada1 #relacion{
+            padding: 5px;
+            width: 280px;
+        }
+
+        #personaje {
+            text-align: justify;
+            font-size: 18px;
+            text-indent: 40px;
+        }
+
+        #personaje img {
+            height: 150px;
+            float: left;
+        }
+
+        #personaje h1 {
+            font-style: italic;
+            font-family: 'Aladin';
+            text-align: center;
+            letter-spacing: 5px;
+            color: black;
+        }
+
+        #personaje #descripcion{
+            text-align: right;
+            border: 0px;
+        }
+
+        
+    </style>
+    <title>Tema II</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="combinada1">
+            <img src="../Img/duo.jpg" alt="protagonistas">
+            <h2>Relación</h2>
+            <div id="relacion">
+            <h3>Relación dinámica:</h3>
+            <p>Al principio, son rivales por sus diferencias de personalidad y su mutua competencia en la escuela. Sin embargo, sus experiencias compartidas las unen, creando una amistad compleja.</p>
+                
+            <h3>Impacto en la historia:</h3>
+                <p>La relación entre ambas es el corazón del musical, mostrando cómo los opuestos pueden aprender una de la otra, pero también cómo las circunstancias y las decisiones las separan.</p>
+            </div>
+        </div>
+        <div id="personaje">
+            <h1>Elphaba</h1>
+            <img src="../Img/elphi.jpg" alt="Elphaba fanArt">
+            <div id="descripcion">
+                <p>Nacida con piel verde, enfrenta discriminación desde pequeña. Es una joven inteligente y con habilidades mágicas excepcionales, pero constantemente es incomprendida.</p>
+            </div>
+            
+        </div>
+        <div id="personaje">
+            <h1>Glinda</h1>
+            <img src="../Img/glinda.jpeg" alt="Glinda fanArt">
+            <div id="descripcion">
+                <p>Una joven brillante y popular, que disfruta de la atención y el reconocimiento social. Representa los privilegios de la belleza y el estatus.</p>
+            </div>
+            
+            
+        </div>
+        <div class="combinada2">
+            <h2>Impacto en la audiencia</h2>
+            <p>Cómo Elphaba y Glinda representan luchas internas que todos enfrentamos: aceptación, lealtad y superar prejuicios.
+                Su relación desafía los conceptos tradicionales de héroes y villanos.</p>
+        </div>
+        <div id="Frase">
+            <h3>Frase Elphaba</h3>
+            <ul>
+                <li>"¡Todos merecen una oportunidad para volar!" (Defying Gravity).</li>
+                <li>"Ya no aceptaré límites solo porque alguien diga que existen." (Defying Gravity).</li>
+              </ul>
+              
+        </div>
+        <div id="Frase">
+            <h3>Frase Glinda</h3>
+            <ul>
+                <li>Primer elemento</li>
+                <li>Primer elemento</li>
+              </ul>
+              
+            
+        </div>
+    </div>
+</body>
+
+</html>
