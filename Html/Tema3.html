@@ -28,6 +28,9 @@
         }
 
         .combinada1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: inherit;
             grid-area: 1/3 / 4/3;
         }
 
@@ -47,9 +50,20 @@
             color: black;
         }
 
-        iframe {
-            float: right;
+        .combinada1 .video{
+            text-align: center;
+            border: 0px;
         }
+
+        .combinada1 .art{
+            text-align: center;
+            border: 0px;
+        }
+
+        .art iframe{
+            height: 400px;
+        }
+
 
         /*tabla*/
         table {
@@ -60,7 +74,8 @@
             text-align: center;
         }
 
-        th,td {
+        th,
+        td {
             border: 1px solid #dddddd;
         }
 
@@ -70,7 +85,7 @@
             color: #000000;
         }
 
-        table img{
+        table img {
             height: 50px;
         }
 
@@ -78,6 +93,19 @@
             background-color: #000000;
         }
 
+        a {
+            background-color: #101111;
+            width: 50px;
+            color: #FFD700;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.5s ease;
+            text-decoration: none;
+        }
+        
     </style>
     <title>Tema III</title>
 </head>
@@ -85,10 +113,23 @@
 <body>
     <div class="grid-container">
         <div class="combinada1">
-            <h3>video trailer</h3>
-            <iframe width="360" height="240" src="https://www.youtube.com/embed/YZy2hnJc0b8?si=JRbekZLhHr2HLbwG"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
+            <h2>video trailer</h2>
+
+            <div class="video">
+                <iframe width="360" height="240" src="https://www.youtube.com/embed/YZy2hnJc0b8?si=JRbekZLhHr2HLbwG"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="art">
+                <iframe
+                    src="https://forbes.es/actualidad/553179/gladiator-ii-y-wicked-las-cifras-de-los-dos-fenomenos-que-arrasan-en-taquilla/"
+                    title="Wikipedia">
+                </iframe>
+            </div>
+            <a href="../Html/Tema1.html" >I</a>
+            <a href="../Html/Tema2.html" >II</a>
+
 
         </div>
         <div class="combinada2">
