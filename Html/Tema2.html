@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
         body {
             font-family: helvetica, verdana;
         }
@@ -31,20 +33,28 @@
 
         .combinada1 {
             grid-area: 1/1 / 4/1;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
+
 
         .combinada2 {
             grid-area: 2/2 / 2/4;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to top, #702f4d, #2b632b, #000000)
         }
 
-        .combinada1 img{
+        .combinada1 img {
             width: 300px;
+            border-radius: 5px;
         }
 
-        .combinada1 #relacion{
+
+        .combinada1 #relacion {
             padding: 5px;
             width: 280px;
+            border: none;
         }
+
 
         #personaje {
             text-align: justify;
@@ -55,6 +65,7 @@
         #personaje img {
             height: 150px;
             float: left;
+            border-radius: 5px;
         }
 
         #personaje h1 {
@@ -65,12 +76,17 @@
             color: black;
         }
 
-        #personaje #descripcion{
+        #personaje #descripcion {
             text-align: right;
             border: 0px;
         }
 
-        
+        h2 {
+            font-family: 'Cinzel';
+            letter-spacing: 5px;
+            color: #FFD700;
+            text-align: center;
+        }
     </style>
     <title>Tema II</title>
 </head>
@@ -81,33 +97,38 @@
             <img src="../Img/duo.jpg" alt="protagonistas">
             <h2>Relación</h2>
             <div id="relacion">
-            <h3>Relación dinámica:</h3>
-            <p>Al principio, son rivales por sus diferencias de personalidad y su mutua competencia en la escuela. Sin embargo, sus experiencias compartidas las unen, creando una amistad compleja.</p>
-                
-            <h3>Impacto en la historia:</h3>
-                <p>La relación entre ambas es el corazón del musical, mostrando cómo los opuestos pueden aprender una de la otra, pero también cómo las circunstancias y las decisiones las separan.</p>
+                <h3>Relación dinámica:</h3>
+                <p>Al principio, son rivales por sus diferencias de personalidad y su mutua competencia en la escuela.
+                    Sin embargo, sus experiencias compartidas las unen, creando una amistad compleja.</p>
+
+                <h3>Impacto en la historia:</h3>
+                <p>La relación entre ambas es el corazón del musical, mostrando cómo los opuestos pueden aprender una de
+                    la otra, pero también cómo las circunstancias y las decisiones las separan.</p>
             </div>
         </div>
         <div id="personaje">
             <h1>Elphaba</h1>
             <img src="../Img/elphi.jpg" alt="Elphaba fanArt">
             <div id="descripcion">
-                <p>Nacida con piel verde, enfrenta discriminación desde pequeña. Es una joven inteligente y con habilidades mágicas excepcionales, pero constantemente es incomprendida.</p>
+                <p>Nacida con piel verde, enfrenta discriminación desde pequeña. Es una joven inteligente y con
+                    habilidades mágicas excepcionales, pero constantemente es incomprendida.</p>
             </div>
-            
+
         </div>
         <div id="personaje">
             <h1>Glinda</h1>
             <img src="../Img/glinda.jpeg" alt="Glinda fanArt">
             <div id="descripcion">
-                <p>Una joven brillante y popular, que disfruta de la atención y el reconocimiento social. Representa los privilegios de la belleza y el estatus.</p>
+                <p>Una joven brillante y popular, que disfruta de la atención y el reconocimiento social. Representa los
+                    privilegios de la belleza y el estatus.</p>
             </div>
-            
-            
+
+
         </div>
         <div class="combinada2">
             <h2>Impacto en la audiencia</h2>
-            <p>Cómo Elphaba y Glinda representan luchas internas que todos enfrentamos: aceptación, lealtad y superar prejuicios.
+            <p>Cómo Elphaba y Glinda representan luchas internas que todos enfrentamos: aceptación, lealtad y superar
+                prejuicios.
                 Su relación desafía los conceptos tradicionales de héroes y villanos.</p>
         </div>
         <div id="Frase">
@@ -115,17 +136,17 @@
             <ul>
                 <li>"¡Todos merecen una oportunidad para volar!" (Defying Gravity).</li>
                 <li>"Ya no aceptaré límites solo porque alguien diga que existen." (Defying Gravity).</li>
-              </ul>
-              
+            </ul>
+
         </div>
         <div id="Frase">
             <h3>Frase Glinda</h3>
             <ul>
                 <li>Primer elemento</li>
                 <li>Primer elemento</li>
-              </ul>
-              
-            
+            </ul>
+
+
         </div>
     </div>
 </body>

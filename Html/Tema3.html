@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-         body {
+        body {
             font-family: helvetica, verdana;
         }
 
@@ -23,7 +24,7 @@
         .grid-container div {
             background-color: rgb(207, 110, 159);
             border: 2px solid rgb(0, 0, 0);
-            padding: 20px;
+            padding: 10px;
         }
 
         .combinada1 {
@@ -37,18 +38,105 @@
         .combinada3 {
             grid-area: 3/1 / 3/3;
         }
+
+        h2 {
+            font-style: italic;
+            font-family: 'Aladin';
+            text-align: center;
+            letter-spacing: 5px;
+            color: black;
+        }
+
+        iframe {
+            float: right;
+        }
+
+        /*tabla*/
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        th,td {
+            border: 1px solid #dddddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        table img{
+            height: 50px;
+        }
+
+        tr {
+            background-color: #000000;
+        }
+
     </style>
     <title>Tema III</title>
 </head>
+
 <body>
     <div class="grid-container">
         <div class="combinada1">
-            video trailer
+            <h3>video trailer</h3>
+            <iframe width="360" height="240" src="https://www.youtube.com/embed/YZy2hnJc0b8?si=JRbekZLhHr2HLbwG"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>
+
         </div>
-        <div class="combinada2"> Impacto cultural</div>
-        <div>adaptaciones y versiones</div>
-        <div>datos curiosos</div>
-        <div class="combinada3">premios</div>
+        <div class="combinada2">
+            <h2>Impacto cultural</h2>
+            <p>Wicked ha redefinido el teatro musical contemporáneo. Desde su debut en 2003, ha inspirado millones de
+                corazones, recaudado más de 5 mil millones de dólares globalmente, y se ha traducido a más de 6 idiomas,
+                convirtiéndose en un símbolo de inclusión y diversidad.</p>
+        </div>
+        <div>
+            <h2>adaptaciones y versiones</h2>
+            <ul>
+                <li>Musical de Broadway (2003 - presente).</li>
+                <li>Producciones internacionales en Londres, Japón, Alemania, México y más.</li>
+                <li>Película de Wicked dirigida por Jon M. Chu (estreno: diciembre de 2024).</li>
+                <li>Libros y mercancías oficiales que expanden el universo de Oz.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>datos curiosos</h2>
+            <ol>
+                <li>Kristin Chenoweth y Idina Menzel interpretaron a Glinda y Elphaba en el estreno original</li>
+                <li>La canción Defying Gravity se ha convertido en un himno icónico del empoderamiento.</li>
+                <li>Es el segundo musical con mayor recaudación en Broadway, después de The Lion King.</li>
+            </ol>
+        </div>
+        <div class="combinada3">
+            <h2>Premios</h2>
+
+            <table>
+                <tr>
+                    <th>Premio</th>
+                    <th>Reconocimiento</th>
+                </tr>
+                <tr>
+                    <td><img src="../Img/tony.jpg" alt=""></td>
+                    <td>Ganador de 3 premios Tony, incluyendo Mejor Actriz por Idina Menzel (Elphaba).</td>
+                </tr>
+                <tr>
+                    <td><img src="../Img/grammy.avif" alt=""></td>
+                    <td>Ganador del Grammy al Mejor Álbum de Teatro Musical.</td>
+                </tr>
+                <tr>
+                    <td><img src="../Img/star.avif" alt=""></td>
+                    <td>Wicked recibió una estrella en 2018 para conmemorar sus 15 años en Broadway.</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
+
 </html>
