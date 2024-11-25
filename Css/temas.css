@@ -61,3 +61,30 @@ div#pie{
     font-family: italic;
     color: #646464;
 }
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+th,td {
+    border: 1px solid #ddcdcd;
+}
+
+th {
+    background-color: gold;
+    font-weight: bold;
+    color: #000000;
+}
+
+table img {
+    height: 100px;
+}
+
+tr {
+    background-color: #000000;
+    color: #f8f8f8;
+}
