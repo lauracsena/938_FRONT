@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*solicitar un numero entre 0 y 999, separando cuantos digitos tiene dicho numero*/
+
+        let valor;
+
+        do {
+            valor = parseInt(prompt('Ingrese un numero entre 0 y 999'));
+            document.write('El number ingresadou has: ');
+            if (valor < 10) {
+                document.write('you are the only exception, one digit');
+            } else {
+                if (valor < 100) {
+                    document.write('two digits')
+                } else {
+                    document.write('tri digits')
+                }
+            }
+            document.write('<hr>');
+        } while (valor != 0);
+    </script>
+</body>
+
+</html>

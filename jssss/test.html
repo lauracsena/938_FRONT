@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas</title>
+</head>
+
+<body>
+    <script>
+        let nom;
+        let total;
+        let correctas;
+
+        nom = prompt('Ingrese su nombre');
+        total = prompt('Ingrese el total de preguntas');
+        correctas = prompt('Ingrese la cantidad de respuestas correctas');
+
+        document.write('El nombre del candidato ' + nom );
+        document.write('<br>');
+        document.write('total de preguntas ' + total );
+        document.write('<br>');
+        document.write('preguntas correctas ' + correctas );
+        document.write('<br>');
+
+        porcentaje = (correctas / total) * 100;
+
+        if (porcentaje >= 90) {
+            document.write('Nivel superior');
+        } else if (porcentaje >= 75) {
+            document.write('Nivel medio');
+        } else if (porcentaje >= 50) {
+            document.write(' Nivel regular');
+        } else {
+            document.write(' Nivel bajo');
+        }
+    </script>
+</body>
+
+</html>

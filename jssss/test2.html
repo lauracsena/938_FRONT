@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*leer 5 notas y reportar cuantas so mayore y cuantas menores de 4.5*/
+
+        let n=0;
+        let mayor=0;
+        let menor=0;
+        while (n < 5){
+            let nota;
+            nota=parseFloat(prompt('ingrese una nota: '));
+            if(nota >= 4.5){
+                mayor=mayor+1;
+            }else{
+                menor=menor+1
+            }
+            n=n+1
+        }
+
+        document.write('las notas mayores a 4.5 son:' + mayor)
+        document.write('<br>');
+        document.write('las notas menores a 4.5 son:' + menor)
+    </script>
+</body>
+</html>

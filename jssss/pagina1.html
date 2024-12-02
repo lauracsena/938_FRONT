@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        let nom="laura";
+        let edad=18;
+        let altura=1.70;
+        let Papacasada=true;
+        let localidad,barrio;
+        let num1,num2;
+        let n1, n2, n3;
+        //imprimir variables
+        document.write('Su nombre es:' + nom);
+        document.write('<br>');
+        document.write('Su edad es:' + edad);
+        document.write('<br>');
+        document.write('Su altura es:' + altura);
+        document.write('<br>');
+        document.write('Es usted papa casada:' + Papacasada);
+
+        document.write('<br>');
+        document.write('<hr>');
+        //ventana emergente
+        localidad=prompt('Ingrese su localidad');
+        barrio=prompt('Ingrese su barrio que te respalda');
+        document.write('.... asi que viven en la localidad: ' + localidad + (' y en el barrio: ') + barrio);
+
+        document.write('<br>');
+        document.write('<hr>');
+        //operaciones
+        num1=prompt('Ingrese el primer valor');
+        num2=prompt('Ingrese el segundo valor');
+        suma=parseInt(num1)+parseInt(num2);
+        producto=parseInt(num1)*parseInt(num2);
+        document.write('Los Resultados son de la suma: ' + suma + ' y el producto equivale a: ' + producto);
+        document.write('<br>');
+        document.write('<hr>');
+        //operadores logicaaaa
+        n1=parseFloat(prompt('Ingrese el primerA NOTA: '));
+        n2=parseFloat(('Ingrese el segundA NOTA: '));
+        n3=parseFloat(('Ingrese el tercerA NOTA: '));
+
+        promedio=(n1+n2+n3)/3;
+
+        if (promedio >= 4.2) {
+            document.write('Resultado Aprobado')
+        }else{
+            if (promedio >= 3.2) {
+                document.write('resultado plan refuerzo')
+            }else{
+                document.write('NO APROBO')
+            }
+        }
+
+    </script>
+</body>
+</html>
