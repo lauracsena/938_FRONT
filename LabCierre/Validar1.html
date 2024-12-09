@@ -29,11 +29,11 @@
         }
 
         function validateForename(field) {
-            return (field == "") ? "Elnomnbre del usuario NO se ha digitado to' bad" : ""
+            return (field == "") ? "El nomnbre del usuario NO se ha digitado to' bad \n" : ""
         }
 
         function validateSurname(field) {
-            return (field == "") ? "El Apellido de usuario NO se ha digitado to' bad" : ""
+            return (field == "") ? "El Apellido de usuario NO se ha digitado to' bad \n" : ""
         }
 
         function validateNickname(field) {
@@ -50,7 +50,7 @@
         function validatePassword(field) {
             if (field == "") return "No se ha entrado el Password.\n"
             else if (field.length < 6)
-                return "Passwords debe tener sl menos 6 caracteres.\n"
+                return "Passwords debe tener al menos 6 caracteres.\n"
             else if (! /[a-z]/.test(field) ||
                 ! /[A-Z]/.test(field) ||
                 ! /[0-9]/.test(field))
