@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        .singup {
+            border: 3px solid rgb(0, 255, 157);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #444444;
+        }
+    </style>
+
+    <script>
+        function validate(form) {
+            fail = validateForename(form.forename.value)
+            fail += validateSurname(form.surname.value)
+            fail += validateNickname(form.nickname.value)
+            fail += validatePassword(form.password.value)
+            fail += validateAge(form.edad.value)
+            fail += validateEmail(form.email.value)
+
+            if (fail == "") return true
+            else { alert(fail); return false }
+        }
+
+        function validateForename(field) {
+            return (field == "") ? "Elnomnbre del usuario NO se ha digitado to' bad" : ""
+        }
+
+        function validateSurname(field) {
+            return (field == "") ? "El Apellido de usuario NO se ha digitado to' bad" : ""
+        }
+
+        function validateNickname(field) {
+            if (field == "") return "El apodo de usuario NO se ha digitado to' bad. \n"
+            else if (field.length < 6)
+                return "El nickname debe ser al menos de 5 caracteres. \n"
+
+            else if (/[^a-zA-Z0-9_-]/.test(field))
+                return "Solo a-z, A-Z, 0-9, - y _ permitidos en el Nickname.\n"
+            return ""
+
+        }
+
+        function validatePassword(field) {
+            if (field == "") return "No se ha entrado el Password.\n"
+            else if (field.length < 6)
+                return "Passwords debe tener sl menos 6 caracteres.\n"
+            else if (! /[a-z]/.test(field) ||
+                ! /[A-Z]/.test(field) ||
+                ! /[0-9]/.test(field))
+                return "Passwords requiere uno de estos caracteres a-z, A-Z and 0-9.\n"
+            return ""
+        }
+
+        function validateAge(field) {
+            if (isNaN(field)) return "No se digito la edad.\\n"
+            else if (field < 18 || field > 110)
+                return "La edad debe estar entre 12 y  110.\n"
+            return ""
+        }
+
+        function validateEmail(field) {
+            if (field == "") return "No se digitó un Email.\n"
+            else if (!((field.indexOf(".") > 0) &&
+                (field.indexOf("@") > 0)) ||
+                /[^a-zA-Z0-9.@_-]/.test(field))
+                return "La direccion de Email NO es validaa.\n"
+            return ""
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <table border="0" cellpadding="2" cellspacing="5" bgcolor=" #ff3385 " align="0 auto">
+        <th colspan="2" align="center">Formulsrio de ingresoo</th>
+        <form action="validar.php" method="post" onsubmit="return validate(this)">
+            <tr>
+                <td>Forname:</td>
+                <td><input type="text" name="forename" maxlength="32"></td>
+            </tr>
+
+            <!--otro-->
+            <tr>
+                <td>Surname:</td>
+                <td><input type="text" name="surname" maxlength="32"></td>
+            </tr>
+            <!--otroorororo-->
+            <tr>
+                <td>Nickname:</td>
+                <td><input type="text" name="nickname" maxlength="32"></td>
+            </tr>
+            <!--otrorororoor y otro-->
+            <tr>
+                <td>Password:</td>
+                <td><input type="text" name="password" maxlength="32"></td>
+            </tr>
+            <!-- edad-->
+            <tr>
+                <td>Edad:</td>
+                <td><input type="text" name="edad" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" maxlength="64"></td>
+            </tr>
+
+            <td colspan="2" align="center">
+                <input type="submit" value="singup">
+            </td>
+        </form>
+    </table>
+</body>
+
+</html>
